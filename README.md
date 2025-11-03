@@ -15,6 +15,7 @@ pip install -r requirements.txt
 # Put/inspect example CSVs in data/
 python src/classify/train_distilbert.py  # trains DistilBERT on data/train.csv & data/val.csv
 python src/classify/predict.py models/cls_distilbert "Patient presents with chest pain radiating to left arm."
+python src/classify/baselines/predict_sklearn.py models/cls_tfidf_logreg "26-year-old with Crohn’s disease (ileocolonic) presenting with 3–4 loose stools/day, mild RLQ cramping, no bleeding. Last colonoscopy 10 months ago showed shallow ulcers in terminal ileum; fecal calprotectin previously elevated. Current meds: adalimumab q2w, azathioprine 100 mg daily; reports partial response and occasional missed doses. Labs today: CRP 9 mg/L, Hgb 12.0. Assessment: probable mild–moderate active Crohn’s with suboptimal biologic trough. Plan: check adalimumab level/anti-drug antibodies, reinforce adherence, stool calprotectin, consider dose escalation or switch to ustekinumab if low trough/high ADA; nutrition counseling; follow-up in 6 weeks."
 ```
 
 ## Data Format
